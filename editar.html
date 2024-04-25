@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Editar Produtos</h1>
+
+    <!-- Botão para voltar à página inicial -->
+    <button onclick="PaginaInicial()">Voltar à Página Inicial</button>
+
+    <h2>Lista de Produtos</h2>
+    <ul id="lista-produtos"></ul>
+
+    <h2>Editar Produto</h2>
+    <form id="form-editar">
+        <input type="hidden" id="indice-editar">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea>
+
+        <label for="preco">Preço R$:</label>
+        <input type="number" id="preco" name="preco" step="0.01" min="0" required>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="vestuario">Vestuário</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="livraria">Livraria</option>
+            <option value="cinema">Cinema</option>
+            <option value="jogos">Jogos</option>
+            <option value="esportes">Esportes</option>
+            <option value="paraolar">Para o Lar</option>
+        </select>
+
+        <label for="quantidade">Quantidade Inicial:</label>
+        <input type="number" id="quantidade" name="quantidade" min="0" required>
+        <button type="submit">Salvar Alterações</button>
+    </form>
+
+    <div id="confirmacao"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

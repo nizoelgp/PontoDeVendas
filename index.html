@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Bem-vindo ao Sistema de Gerenciamento de Vendas</h1>
+    <p>Aqui você pode visualizar o estoque atual de produtos, adicionar novos produtos e realizar outras operações relacionadas aos produtos do seu ponto de vendas, como editar, excluir, vender, emitir o relatório de vendas, etc.</p>
+    
+    <button onclick="redirectCadastro()">Adicionar Novo Produto</button>
+    <button onclick="redirectEditar()">Editar/Atualizar Produtos</button>
+    <button onclick="redirectDeletar()">Excluir Produtos</button>
+    <button onclick="redirectVendas()">Registrar Venda</button>
+
+    <div id="estoque">
+        <h2>Estoque Atual</h2>
+        <ul id="lista-produtos">
+            <!-- Aqui serão listados os produtos e suas quantidades -->
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

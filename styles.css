@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9e2e8; /* Rosa pastel para o fundo */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #a74b6a; /* Rosa pastel mais escuro para os títulos */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button,
+input[type="submit"] {
+    background-color: #ffb6c1; /* Rosa pastel para os botões */
+    color: #fff; /* Cor do texto no botão */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #ff8c9b; /* Rosa pastel mais escuro para os botões ao passar o mouse */
+}
+
+form {
+    background-color: #fcdede; /* Rosa pastel claro para o fundo do formulário */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+#confirmacao {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#estoque {
+    background-color: #fcdede; /* Rosa pastel claro para o fundo da área de estoque */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#lista-produtos {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilizando os itens da lista de produtos */
+#lista-produtos li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Estilo para o último item da lista de produtos, sem borda inferior */
+#lista-produtos li:last-child {
+    border-bottom: none;
+}
+
+#excluirSelecionadosBtn,
+#excluirProdutosBtn,
+#venderProdutosBtn,
+#limparVendasBtn {
+    margin-top: 10px; /* Reduzindo a margem superior dos botões para um espaçamento mais compacto */
+    margin-right: 10px; /* Adicionando margem à direita para separar os botões */
+}
